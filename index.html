@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prática 2 - HTML Semântico</title>
+</head>
+<body>
+
+    <!-- 1. CABEÇALHO (TOP DA PÁGINA) -->
+    <header>
+        <h1>Meu Site Semântico</h1>
+        
+        <!-- 2. MENU DE NAVEGAÇÃO -->
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 3. CONTEÚDO PRINCIPAL -->
+    <main>
+
+        <!-- SEÇÃO "SOBRE" -->
+        <section id="sobre">
+            <h2>Sobre Nós</h2>
+            <p>Bem-vindo ao nosso site. Aqui usamos as tags <strong>semânticas</strong> do HTML5 para organizar o conteúdo de forma clara e acessível.</p>
+            
+            <article>
+                <h3>Nossa Missão</h3>
+                <p>Oferecer conteúdo de qualidade e fácil compreensão para todos os usuários.</p>
+            </article>
+        </section>
+
+        <!-- SEÇÃO "SERVIÇOS" (Com uma lista e uma imagem) -->
+        <section id="servicos">
+            <h2>Nossos Serviços</h2>
+            <ul>
+                <li>Desenvolvimento Web</li>
+                <li>Design Responsivo</li>
+                <li>Otimização de Performance</li>
+            </ul>
+            
+            <figure>
+                <img src="https://via.placeholder.com/400x200?text=Imagem+de+Servi%C3%A7os" alt="Exemplo de imagem representando serviços de tecnologia">
+                <figcaption>Ilustração dos nossos serviços</figcaption>
+            </figure>
+        </section>
+
+        <!-- SEÇÃO "CONTATO" (Formulário simples) -->
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>Preencha o formulário abaixo para falar conosco:</p>
+            
+            <form action="#" method="POST">
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome" name="nome" required><br><br>
+
+                <label for="email">E-mail:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="mensagem">Mensagem:</label><br>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea><br><br>
+
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- 4. RODAPÉ -->
+    <footer>
+        <address>
+            Entre em contato: <a href="mailto:contato@meusite.com">contato@meusite.com</a>
+        </address>
+        <p>&copy; 2026 Meu Site. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
